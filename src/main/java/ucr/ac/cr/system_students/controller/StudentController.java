@@ -68,4 +68,8 @@ public class StudentController {
     public ResponseEntity<?> getAdults() {
         return ResponseEntity.ok(studentService.findAdults());
     }
+    @GetMapping("/saludo")
+    public ResponseEntity<?> getSaludo() {
+        return ResponseEntity.ok("Esto es una prueba de cambio");
+    }
 }
